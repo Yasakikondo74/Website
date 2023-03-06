@@ -1,0 +1,59 @@
+@font-face{
+    font-family:Jomolhari;
+    src:url(./fonts/Jomolhari-Regular.ttf)
+}
+
+*{
+    background-color: black;
+}
+
+/* Top */
+.top{
+    padding-bottom: 5%;
+}
+.top_logo{
+    position: absolute;
+    left:5%;
+}
+p{
+    font-family: Jomolhari;
+}
+.menu{
+    position: absolute;
+    top:0%;
+    right:10%;
+    color:white;
+}
+.menu>p>a{
+    text-decoration: none;
+    color:white;
+    margin-left: 50%;
+}
+.menu>p>a:hover{
+    text-decoration: underline;
+}
+.color1{
+    letter-spacing: 16px;
+    color:#F54A7E;
+}
+
+/* Contents */
+.contents{
+    display:flex;
+    justify-content: center;
+}
+.main_logo{
+    color:white;
+    font-size: 500%;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+span{
+    display:flex;
+    justify-content: left;    
+}
+.gray_box{
+    background-color:#6F6F6F;
+    width: 391px;
+    height: 458px;
+}
