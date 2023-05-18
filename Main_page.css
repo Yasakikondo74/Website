@@ -1,0 +1,71 @@
+@font-face {
+    font-family: First_font;
+    src: url(./font/bitstream_iowan_old_style_bt.ttf);
+  }
+*{
+    font-family: First_font;
+    margin: 0;
+    padding: 0;
+}
+
+/* RIGHT SIDE OF THE CODE */
+.left_side {
+    position: absolute;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    
+    .job {
+        font-size: 300%;
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+    }
+
+    .name {
+        font-size: 700%;
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+
+    .blue{
+        position: absolute;
+        bottom:0;
+    }
+    
+    .pink{
+        position: absolute;
+        right:3%;
+        top: 5%;
+    }
+}
+/* END */
+.hr{
+    height: 100vh;
+    width:.01vw;
+    border-width:0;
+    background-color:rgb(165, 165, 165);
+    position: absolute;
+    left: 50%;
+}
+/* RIGHT SIDE OF THE CODE */
+.right_side{
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    .icon{
+        float:left;
+        margin-right: 1%;
+    }
+}
+.right_side>a{
+    text-decoration: none;
+    color:black
+}
+.right_side>a:hover{
+    text-decoration: underline;
+}
