@@ -15,7 +15,15 @@
     right: 50%;
     bottom: 0;
     top: 0;
-    
+
+    .logo{
+        position: absolute;
+        left: 15%;
+        top: 5%;
+        width: 7.5%;
+        height: auto;
+    }
+
     .job {
         font-size: 300%;
         position: absolute;
@@ -37,12 +45,12 @@
     
     .pink{
         position: absolute;
-        right:3%;
-        top: 5%;
+        right: 5%;
+        top: 4%;
     }
 }
 /* END */
-.hr{
+.middle_bar{
     height: 100vh;
     width:.01vw;
     border-width:0;
@@ -52,15 +60,36 @@
 }
 /* RIGHT SIDE OF THE CODE */
 .right_side{
+    background-color: rgba(0, 255, 255, 0.1);
     position: absolute;
     left: 50%;
     right: 0;
     bottom: 0;
     top: 0;
+
     .icon{
         float:left;
         margin-right: 1%;
     }
+
+    #left{
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 25%;
+        right: 20%;
+    }
+    
+    #right{
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 25%;
+        right: 15%;
+    }
+}
+.right_side .slideshow{
+    padding-bottom: 10%;
 }
 .right_side>a{
     text-decoration: none;
