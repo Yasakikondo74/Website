@@ -73,18 +73,24 @@
     }
 
     #left{
-        border: none;
-        background-color: transparent;
+        width: 5%;
+        height:5%;
+        border-width: 0.5px;
+        border-radius: 25px;
+        background-color: rgba(255, 109, 109, 0.507);
         position: absolute;
-        top: 25%;
-        right: 20%;
+        top: 30%;
+        right: 21%;
     }
     
     #right{
-        border: none;
-        background-color: transparent;
+        width: 5%;
+        height:5%;
+        border-width: 0.5px;
+        border-radius: 25px;
+        background-color: rgb(255, 109, 109);
         position: absolute;
-        top: 25%;
+        top: 30%;
         right: 15%;
     }
 }
@@ -97,4 +103,13 @@
 }
 .right_side>a:hover{
     text-decoration: underline;
+}
+.side_scroller{
+    gap: var(--size--3);
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+
+
+    overflow-x: auto;
 }
