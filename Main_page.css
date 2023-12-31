@@ -130,6 +130,10 @@
         margin-top: -7%;
         right: 10%;
         
+        button{
+            border-style: none;
+        }
+
         button:nth-child(1) {
             background-image: url('img/left.png');
         }
@@ -145,8 +149,7 @@
         button:nth-child(2):hover {
             background-image: url('img/right_hover.png');
         }
-        
-    }
+    }    
     .image_list::-webkit-scrollbar {
         display: none;
     }
