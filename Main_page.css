@@ -1,15 +1,19 @@
 @font-face {
-    font-family: First_font;
-    src: url(./font/bitstream_iowan_old_style_bt.ttf);
+    font-family: iowan_old;
+    src: url(font/2131-font.otf);
   }
+@font-face {
+    font-family: inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
 *{
-    font-family: First_font;
     margin: 0;
     padding: 0;
 }
 
 /* RIGHT SIDE OF THE CODE */
 .left_side {
+    font-family: iowan_old;
     position: absolute;
     left: 0;
     right: 50%;
@@ -25,17 +29,17 @@
     }
 
     .job {
-        font-size: 300%;
+        font-size: 235%;
         position: absolute;
-        bottom: 5%;
-        left: 3%;
+        bottom: 7%;
+        left: 10%;
     }
 
     .name {
-        font-size: 700%;
+        font-size: 500%;
         position: absolute;
         bottom: 10%;
-        left: 3%;
+        left: 10%;
     }
 
     .blue{
@@ -67,70 +71,90 @@
     bottom: 0;
     top: 0;
 
-    .icon{
-        float:left;
-        margin-right: 1%;
-    }
-
-    #left{
-        width: 5%;
-        height:5%;
-        border-width: 0.5px;
-        border-radius: 25px;
-        background-color: rgba(255, 109, 109, 0.507);
-        position: absolute;
-        top: 45%;
-        right: 21%;
-    }
-    
-    #right{
-        width: 5%;
-        height:5%;
-        border-width: 0.5px;
-        border-radius: 25px;
-        background-color: rgb(255, 109, 109);
-        position: absolute;
-        top: 45%;
-        right: 15%;
-    }
-
-    .side_scroller{
-        padding: 10% 0%;
-        padding-left: 9%;
-        gap: var();
-        display:grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 25%;
-        column-gap: 5%;
+    .image_list{
         overflow-x: auto;
-    }
+        display:grid;
+        gap: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10% 0 10% 5%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
-    .side_scroller::-webkit-scrollbar{
-        -webkit-appearance: none;
-    }
+        .image_item{
+            background-color: white;
+            border-style: solid;
+            border-width: 0.5px;
 
-    .side_element{
-        border-width: 1px;
-        border-style: solid;
-        border-color: black;
-        background-color: white;
-    }
-    .text-location{
-        position: inherit;
-    }
-    .tag{
-        padding-top: 5%;
-        padding-left: 5%;
-    }
-}
+            h1{
+                font-family: inter;
+                font-size: 200%;
+                padding-top: 5%;
+                padding-left: 5%;
+                margin-bottom: -1%;
+            }
 
-.right_side .slideshow{
-    padding-bottom: 10%;
-}
-.right_side .tag>a{
-    text-decoration: none;
-    color:black
-}
-.right_side .tag>a:hover{
-    text-decoration: underline;
+            p{
+                font-family: inter;
+                padding-left: 5%;
+                font-size: 150%;
+                text-decoration: none;
+            }
+            .genre{
+                padding-left: 5%;
+                padding-bottom: 3%;
+
+                span{
+                    padding: 1% 2%;
+                    margin-right: 5%;
+                    border-radius: 5px;
+                    border-style: none;
+                    background-color: #CBECFF;
+                    font-family: inter;
+                    font-size: 150%; /* Adjust this value according to your needs */
+                }
+            }
+
+            hr{
+                border-style:solid;
+            }
+
+            img{
+                width: 500px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    .controls{
+        position: absolute;
+        margin-top: -7%;
+        right: 10%;
+        
+        button:nth-child(1) {
+            background-image: url('img/left.png');
+        }
+        
+        button:nth-child(1):hover {
+            background-image: url('img/left_hover.png');
+        }
+        
+        button:nth-child(2) {
+            background-image: url('img/right.png');
+        }
+        
+        button:nth-child(2):hover {
+            background-image: url('img/right_hover.png');
+        }
+        
+    }
+    .image_list::-webkit-scrollbar {
+        display: none;
+    }
+    .link a{
+        text-decoration: none;
+        color:black;
+    }
+    .link a:hover{
+        text-decoration:dashed;
+    }
 }
