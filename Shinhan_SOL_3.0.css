@@ -7,8 +7,14 @@
     src: url(font/2131-font.otf);
   }
 *{
+    font-family: inter;
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+    display: none;
 }
 .Top_Panel{
     display: flex;
@@ -24,9 +30,8 @@
     }
     .back{
         position: absolute;
-        left: 5%;
+        left: 6%;
         top: 20%;
-        font-family: inter;
 
         img{
             margin-bottom: -5%;
@@ -43,20 +48,19 @@
     }
     .menu-link {
         padding-top: 5%;
-        font-family: inter;
         text-decoration: none;
         color: black;
         margin: 0 20px;
     }
     .menu-link:hover {
-        text-decoration: dashed;
+        text-decoration: underline;
     }
 }
 .First_panel{
     padding-left:20%;
     background-color: #F9F9F9;
     padding-bottom: 5%;
-    font-family: inter;
+
     img{
         float:left;
         padding: 0.5%;
@@ -72,5 +76,125 @@
     }
     p{
         padding: 0.5% 23.9% 0 0%;
+    }
+}
+.Second_panel{
+    padding-top: 1.5%;
+
+    img{
+        margin-top: -7.5%;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5%;
+    }
+    ul{
+        padding: 0% 36%;
+        li{
+            line-height:200%;
+        }
+    }
+}
+.Third_panel{
+    background-color: #F9F9F9;
+    margin-top: -7.5%;
+
+    h1{
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        padding-bottom: 3%;
+    }
+}
+.Fourth_panel{
+    padding-left: 5%;
+    padding-top: 2%;
+
+    img:nth-last-child(2){
+        position: absolute;
+        right: 0;
+        padding-top: 7.5%;
+        width: 20%;
+        z-index: -1;
+    }
+}
+.Fifth_panel{
+    background-color: #F9F9F9;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    .phones{
+        padding-left: 2.5%;
+        img{
+            margin-top: -5%;
+            width: 15%;
+            padding-right: 2.5%;
+        }
+    }
+    .def1{
+        margin-top: -5%;
+        position: absolute;
+        right: 5%;
+        button{
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        button:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.Last_panel{
+    background-color: #CBECFF;
+    padding-bottom: 5%;
+
+    span{
+        padding: 2% 0 2% 5%;
+    }
+    .right_side_of_footer1{
+        margin-top: -10%;
+        a:nth-child(1){
+            position: absolute;
+            right:10%;
+            text-decoration: none;
+            color: black;
+        }
+        a:nth-child(1):hover {
+            text-decoration: underline;
+        }
+        a:nth-child(2){
+            position: absolute;
+            right:5%;
+            text-decoration: none;
+            color: black;
+        }
+        a:nth-child(2):hover {
+            text-decoration: underline;
+        }
+    }
+    .right_side_of_footer2{
+        margin-top: 8.5%;
+        span{
+            margin-top: -2.1%;
+            position: absolute;
+            right:19%;
+        }
+        a{
+            position: absolute;
+            right:5%;
+            text-decoration: none;
+            color: black;
+            img{
+                float:left;
+                margin-left: -1%;
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }

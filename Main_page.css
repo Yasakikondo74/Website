@@ -10,9 +10,6 @@
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 458px) {
-    
-}
 /* RIGHT SIDE OF THE CODE */
 .left_side {
     font-family: iowan_old;
@@ -180,8 +177,7 @@
             color:black;
         }
         a:hover{
-            text-decoration:solid;
-            color: white;
+            text-decoration:underline;
         }
     }
 }
